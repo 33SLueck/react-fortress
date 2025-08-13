@@ -95,6 +95,7 @@ Open Command Palette (`Ctrl+Shift+P`) → "Tasks: Run Task" and select a task:
 
 - **Development Server** - Starts the development server
 - **Build Project** - Creates the production build
+- **Type Check** - Validates TypeScript types
 - **Lint Code** - Checks code for errors
 - **Lint & Fix** - Checks and fixes code automatically
 - **Format Code** - Formats code with Prettier
