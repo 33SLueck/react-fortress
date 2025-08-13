@@ -57,6 +57,10 @@ npm run dev
 
 ### 4. Linting & Formatting
 
+- **Type checking:**
+  ```sh
+  npm run type-check
+  ```
 - **Check code:**
   ```sh
   npm run lint
@@ -105,7 +109,8 @@ Open Command Palette (`Ctrl+Shift+P`) → "Tasks: Run Task" and select a task:
 - **Vitest Integration:**
   - The project uses Vitest and @testing-library/react for unit and component tests.
   - Test scripts:
-    - `npm test` – Runs all tests once
+    - `npm test` – Runs all tests in watch mode
+    - `npm run test:unit` – Runs all tests once (CI mode)
     - `npm run test:watch` – Tests in watch mode
     - `npm run test:ui` – Starts the Vitest UI
     - `npm run test:coverage` – Shows test coverage
@@ -113,8 +118,13 @@ Open Command Palette (`Ctrl+Shift+P`) → "Tasks: Run Task" and select a task:
   - **Recommended Extensions:** Vitest Explorer and Test Adapter Converter for better VS Code integration.
 
 - **GitHub Actions Workflow:**
-  - A workflow is set up in `.github/workflows/test.yml` that automatically runs linting and tests on every push and pull request to `main`.
-  - This ensures no faulty commits reach the main branch.
+  - A comprehensive workflow is set up in `.github/workflows/test.yml` that runs on every push and pull request:
+    - **Type Checking** - Validates TypeScript types
+    - **ESLint Check** - Code quality and style rules
+    - **Prettier Check** - Code formatting validation
+    - **Unit Tests** - Runs all test suites
+    - **Build Check** - Ensures production build works
+  - This ensures high code quality and prevents faulty commits from reaching any branch.
 
 - **Note on npm deprecation warnings:**
   - When installing dependencies, warnings like `deprecated inflight` or `deprecated glob` may appear.
