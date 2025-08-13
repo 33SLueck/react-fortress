@@ -1,5 +1,11 @@
 # React Fortress 🏰
 
+> **This repository is a GitHub template!**
+>
+> Click **"Use this template"** on GitHub to create your own project with all features pre-configured.
+
+---
+
 **Enterprise-Grade React Template with Bulletproof Quality Assurance**
 
 ![React](https://img.shields.io/badge/React-19.1.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
@@ -46,18 +52,18 @@
 
 ## 🖥️ VS Code Workspace Setup
 
-Das Template enthält eine vollständige VS Code Workspace-Konfiguration:
+This template includes a complete VS Code workspace configuration:
 
-- `.vscode/settings.json`: Stellt empfohlene Editor-Einstellungen bereit (z.B. Formatierung, Linting, TypeScript, Tailwind CSS, empfohlene Extensions).
-- `.vscode/tasks.json`: Enthält alle wichtigen Build-, Test- und QA-Tasks, die direkt über die VS Code Task-Leiste ausgeführt werden können.
+- `.vscode/settings.json`: Provides recommended editor settings (e.g. formatting, linting, TypeScript, Tailwind CSS, recommended extensions).
+- `.vscode/tasks.json`: Contains all important build, test, and QA tasks that can be run directly from the VS Code task bar.
 
-**Vorteile:**
+**Benefits:**
 
-- Sofort einsatzbereite Entwicklungsumgebung
-- Einheitliche Code-Qualität im Team
-- Komfortable Task-Ausführung ohne Terminal-Befehle
+- Instantly ready-to-use development environment
+- Consistent code quality across the team
+- Convenient task execution without terminal commands
 
-> **Tipp:** Öffne die VS Code Kommando-Palette (`Ctrl+Shift+P`) und wähle "Tasks: Run Task" für alle wichtigen Workflows!
+> **Tip:** Open the VS Code Command Palette (`Ctrl+Shift+P`) and select "Tasks: Run Task" for all important workflows!
 
 ## 🚀 Step-by-Step Guide: Setup & Usage
 
@@ -77,8 +83,22 @@ Das Template enthält eine vollständige VS Code Workspace-Konfiguration:
 
 ### 2. Project Setup
 
+#### 🟢 **Recommended: Use as GitHub Template**
+
+1. Click the green **"Use this template"** button on the repository page.
+2. Create your new repository (e.g. `my-app`) from this template.
+3. Clone your new repository:
+
+   ```sh
+   git clone https://github.com/<your-github-username>/<your-repo>.git
+   cd <your-repo>
+   npm install
+   ```
+
+#### ⚪ **Alternative: Clone Directly**
+
 ```sh
-git clone https://github.com/your-username/react-fortress.git
+git clone https://github.com/33SLueck/react-fortress.git
 cd react-fortress
 npm install
 ```

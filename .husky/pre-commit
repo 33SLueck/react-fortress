@@ -1,5 +1,7 @@
 # Run lint-staged for changed files
+
 npx lint-staged
 
-# Type check all files  
+# Type check all files
+
 npm run type-check
