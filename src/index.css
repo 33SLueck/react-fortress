@@ -1,1 +1,23 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --color-background: var(--color-gray-50);
+  --color-foreground: var(--color-gray-900);
+  --color-dark-background: var(--color-gray-900);
+  --color-dark-foreground: var(--color-gray-50);
+  --color-primary: var(--color-teal-400);
+  --color-secondary: var(--color-amber-600);
+  --color-error: var(--color-red-600);
+  --color-success: var(--color-green-500);
+  --color-info: var(--color-amber-300);
+  --color-highlight: var(--color-purple-600);
+}
+:root {
+  background: var(--color-background);
+  color: var(--color-foreground);
+}
+.dark {
+  background: var(--color-dark-background);
+  color: var(--color-dark-foreground);
+}
