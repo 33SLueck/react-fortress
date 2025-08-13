@@ -44,6 +44,21 @@
 
 ---
 
+## 🖥️ VS Code Workspace Setup
+
+Das Template enthält eine vollständige VS Code Workspace-Konfiguration:
+
+- `.vscode/settings.json`: Stellt empfohlene Editor-Einstellungen bereit (z.B. Formatierung, Linting, TypeScript, Tailwind CSS, empfohlene Extensions).
+- `.vscode/tasks.json`: Enthält alle wichtigen Build-, Test- und QA-Tasks, die direkt über die VS Code Task-Leiste ausgeführt werden können.
+
+**Vorteile:**
+
+- Sofort einsatzbereite Entwicklungsumgebung
+- Einheitliche Code-Qualität im Team
+- Komfortable Task-Ausführung ohne Terminal-Befehle
+
+> **Tipp:** Öffne die VS Code Kommando-Palette (`Ctrl+Shift+P`) und wähle "Tasks: Run Task" für alle wichtigen Workflows!
+
 ## 🚀 Step-by-Step Guide: Setup & Usage
 
 ### 1. Prerequisites
