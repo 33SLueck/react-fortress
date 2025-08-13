@@ -6,6 +6,7 @@
     "bradlc.vscode-tailwindcss",
     "actboy168.tasks",
     "vitest.explorer",
-    "ms-vscode.test-adapter-converter"
+    "ms-vscode.test-adapter-converter",
+    "vivaxy.vscode-conventional-commits"
   ]
 }

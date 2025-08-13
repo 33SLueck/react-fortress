@@ -1,0 +1,7 @@
+echo "🧪 Running tests before push..."
+npm run test:unit
+
+echo "🏗️ Running build check..."
+npm run build
+
+echo "✅ All checks passed! Pushing..."

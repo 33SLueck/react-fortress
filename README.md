@@ -7,6 +7,7 @@
 ![Vitest](https://img.shields.io/badge/Vitest-3.2.4-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-9.33.0-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/Prettier-3.6.2-F7B93E?style=for-the-badge&logo=prettier&logoColor=white)
+![Husky](https://img.shields.io/badge/Husky-9.1.7-000000?style=for-the-badge&logo=git&logoColor=white)
 
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
@@ -21,6 +22,7 @@ This is a GitHub template repository for quickly starting a new project with Rea
 - **Tailwind CSS 4** - Utility-first CSS with dark mode
 - **Vitest** - Fast unit testing with React Testing Library
 - **ESLint + Prettier** - Code quality and formatting
+- **Husky + lint-staged** - Git hooks for quality assurance
 - **GitHub Actions** - Automated CI/CD pipeline
 
 ---
@@ -126,6 +128,15 @@ Open Command Palette (`Ctrl+Shift+P`) → "Tasks: Run Task" and select a task:
     - **Unit Tests** - Runs all test suites
     - **Build Check** - Ensures production build works
   - This ensures high code quality and prevents faulty commits from reaching any branch.
+
+- **Git Hooks with Husky:**
+  - **Pre-commit Hook** - Runs on every commit:
+    - `lint-staged` - Formats and lints only changed files
+    - `type-check` - Validates TypeScript types
+  - **Pre-push Hook** - Runs before pushing:
+    - `test:unit` - Runs all tests
+    - `build` - Ensures production build works
+  - **Instant Feedback** - Catches issues before they reach CI/CD
 
 - **Note on npm deprecation warnings:**
   - When installing dependencies, warnings like `deprecated inflight` or `deprecated glob` may appear.
