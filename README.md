@@ -12,8 +12,9 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Node.js](https://img.shields.io/badge/Node.js-LTS-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Commitizen](https://img.shields.io/badge/Commitizen-friendly-brightgreen?style=for-the-badge)
 
-This is a GitHub template repository for quickly starting a new project with React, TypeScript, Vite, and Tailwind CSS. It includes hot module replacement (HMR), ESLint configuration, Prettier formatting and a minimal setup for rapid development.
+This is a GitHub template repository for quickly starting a new project with React, TypeScript, Vite, and Tailwind CSS. It includes hot module replacement (HMR), ESLint configuration, Prettier formatting, comprehensive testing setup, Git hooks, and enterprise-grade quality assurance.
 
 ## 🛠️ Tech Stack
 
@@ -23,6 +24,7 @@ This is a GitHub template repository for quickly starting a new project with Rea
 - **Vitest** - Fast unit testing with React Testing Library
 - **ESLint + Prettier** - Code quality and formatting
 - **Husky + lint-staged** - Git hooks for quality assurance
+- **Commitizen + Commitlint** - Conventional commit standards
 - **GitHub Actions** - Automated CI/CD pipeline
 
 ---
@@ -41,6 +43,7 @@ This is a GitHub template repository for quickly starting a new project with Rea
   - Tasks (actboy168.tasks)
   - Vitest Explorer (vitest.explorer) - for test integration
   - Test Adapter Converter (ms-vscode.test-adapter-converter) - for better test display
+  - Conventional Commits (vivaxy.vscode-conventional-commits) - for commit assistance
 
 ### 2. Project Setup
 
@@ -91,7 +94,41 @@ npm run dev
   npm run preview
   ```
 
-### 6. Using VS Code Tasks
+### 6. Git Workflow with Conventional Commits
+
+This template enforces conventional commit standards for better project history and automated changelog generation.
+
+#### Interactive Commit Creation
+
+```sh
+npm run commit
+```
+
+This starts an interactive wizard that helps you create properly formatted commit messages following the conventional commit standard.
+
+#### Commit Types
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation only changes
+- `style`: Code style changes (formatting, semicolons, etc.)
+- `refactor`: Code changes that neither fix bugs nor add features
+- `test`: Adding or correcting tests
+- `chore`: Changes to build process or auxiliary tools
+
+#### Example Commits
+
+```sh
+feat: add user authentication system
+fix: resolve memory leak in data processing
+docs: update installation instructions
+style: format code according to prettier rules
+refactor: extract common validation logic
+test: add integration tests for API endpoints
+chore: update dependencies to latest versions
+```
+
+### 7. Using VS Code Tasks
 
 Open Command Palette (`Ctrl+Shift+P`) → "Tasks: Run Task" and select a task:
 
