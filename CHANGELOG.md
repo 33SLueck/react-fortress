@@ -9,6 +9,7 @@
 - Husky Git hooks for quality assurance
 - Comprehensive testing setup with Vitest
 - GitHub Actions workflow with quality gates
+- Dependabot enabled
 
 ### Changed
 

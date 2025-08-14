@@ -18,6 +18,7 @@
 ![Husky](https://img.shields.io/badge/Husky-9.1.7-000000?style=for-the-badge&logo=git&logoColor=white)
 
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen?style=for-the-badge&logo=dependabot&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Node.js](https://img.shields.io/badge/Node.js-LTS-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Commitizen](https://img.shields.io/badge/Commitizen-friendly-brightgreen?style=for-the-badge)
@@ -46,6 +47,7 @@
 - **ESLint + Prettier** - Code quality and formatting
 - **Husky + lint-staged** - Git hooks for quality assurance
 - **Commitizen + Commitlint** - Conventional commit standards
+- **Dependabot** - Automated dependency updates with security scanning
 - **GitHub Actions** - Automated CI/CD pipeline
 
 ---
@@ -229,6 +231,15 @@ Open Command Palette (`Ctrl+Shift+P`) → "Tasks: Run Task" and select a task:
   - When installing dependencies, warnings like `deprecated inflight` or `deprecated glob` may appear.
   - These warnings come from indirect dependencies used by older tools.
   - They have **no impact** on the functionality or security of your project and can be ignored. The maintainers of the respective tools will update these dependencies over time.
+
+- **Automated Dependency Management:**
+  - **Dependabot** is configured to automatically check for dependency updates weekly
+  - Creates pull requests for:
+    - NPM package updates (grouped by related packages like React, TypeScript, ESLint)
+    - GitHub Actions version updates
+    - Security vulnerability patches
+  - All updates run through the complete quality gate pipeline before being suggested
+  - Configuration: `.github/dependabot.yml`
 
 ---
 
