@@ -7,6 +7,61 @@
     "typescriptreact",
     "javascriptreact"
   ],
+  "actionButtons": {
+    "reloadButton": "🔄",
+    "commands": [
+      {
+        "name": "🚀 Dev",
+        "color": "#00ff00",
+        "singleInstance": true,
+        "command": "npm run dev",
+        "tooltip": "Start Development Server"
+      },
+      {
+        "name": "⚡ QA",
+        "color": "#ffff00",
+        "command": "npm run quality",
+        "tooltip": "Run All Quality Checks"
+      },
+      {
+        "name": "🧪 Test",
+        "color": "#00ffff",
+        "command": "npm run test:run",
+        "tooltip": "Run Tests"
+      },
+      {
+        "name": "👀 Watch",
+        "color": "#ff00ff",
+        "singleInstance": true,
+        "command": "npm run test:watch",
+        "tooltip": "Test Watch Mode"
+      },
+      {
+        "name": "✨ Format",
+        "color": "#ffffff",
+        "command": "npm run format",
+        "tooltip": "Format Code"
+      },
+      {
+        "name": "🔧 Fix",
+        "color": "#ff8800",
+        "command": "npm run lint:fix",
+        "tooltip": "Lint & Fix"
+      },
+      {
+        "name": "🏗️ Build",
+        "color": "#0088ff",
+        "command": "npm run build",
+        "tooltip": "Build Production"
+      },
+      {
+        "name": "📝 Commit",
+        "color": "#88ff00",
+        "command": "npm run commit",
+        "tooltip": "Guided Commit"
+      }
+    ]
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   }

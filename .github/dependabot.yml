@@ -1,0 +1,76 @@
+# GitHub Dependabot configuration for React Fortress
+# Automatically keeps dependencies up to date
+
+version: 2
+updates:
+  # Enable version updates for npm dependencies
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '06:00'
+    open-pull-requests-limit: 10
+    target-branch: 'main'
+    commit-message:
+      prefix: 'chore'
+      prefix-development: 'chore'
+      include: 'scope'
+    labels:
+      - 'dependencies'
+      - 'automated'
+    reviewers:
+      - '33SLueck'
+    assignees:
+      - '33SLueck'
+    # Group updates for related packages
+    groups:
+      react:
+        patterns:
+          - 'react*'
+          - '@types/react*'
+      typescript:
+        patterns:
+          - 'typescript*'
+          - '@typescript-eslint/*'
+      eslint:
+        patterns:
+          - 'eslint*'
+          - '@eslint/*'
+      testing:
+        patterns:
+          - 'vitest*'
+          - '@vitest/*'
+          - '@testing-library/*'
+      vite:
+        patterns:
+          - 'vite*'
+          - '@vitejs/*'
+      tailwind:
+        patterns:
+          - 'tailwindcss*'
+          - '@tailwindcss/*'
+      commitizen:
+        patterns:
+          - '@commitlint/*'
+          - 'commitizen*'
+          - 'cz-*'
+
+  # Enable version updates for GitHub Actions
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '06:00'
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: 'ci'
+      include: 'scope'
+    labels:
+      - 'github-actions'
+      - 'automated'
+    reviewers:
+      - '33SLueck'
+    assignees:
+      - '33SLueck'
